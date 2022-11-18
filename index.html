@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="asset/style.css" rel="stylesheet" />
+    <title>Tes THT Bengkrad</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Times New Roman";
+      font-size: 1.2em;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffebeb;
+    }
+
+    /* HEADER */
+
+    header {
+      text-align: center;
+      background-color: #aa1010;
+      color: #effffd;
+    }
+
+    /* NAV BAR */
+
+    nav {
+      background-color: #540000;
+      position: sticky;
+      top: 0;
+    }
+
+    nav > ul {
+      /* Tambahkan kode navbar disini */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: auto;
+      block-size: auto;
+      padding-bottom: 2mm;
+      position: sticky;
+      text-align: center;
+      list-style: none;
+      margin-right: 2.5rem;
+    }
+
+    .nav-button a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-items: center;
+    }
+
+    
+    /* Main Content (tambahkan CSS main kalian disini) */
+
+    .sub-bagian {
+      padding: 10px;
+      border-radius: 20px;
+      margin: 1rem;
+    }
+
+    .left {
+      margin-top: 2mm;
+      margin-left: 2mm;
+      margin-right: 1mm;
+      width: 72%;
+    }
+    
+    .right {
+      margin-top: 7mm;
+      margin-left: 4mm;
+      width: 25%;
+      height: 80%;
+    }
+
+    .img-thumbnail {
+      border-radius: 150px;
+      margin-inline: 6.5rem;
+    }
+
+    /* FOOTER */
+    
+    footer {
+      background-color: #aa1010;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .copyright {
+      flex: 4 1 70%;
+      font-size: larger;
+    }
+
+    .social-media {
+      flex: 1 1 20%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: right;
+    }
+
+    .social-media li {
+      padding: 10px;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .copyright,
+      .social-media {
+        flex: 1 1 100%;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      /* Tambahkan kode responsif navbar disini */
+      nav > ul {
+        flex-direction: column;
+      }
+    
+      main {
+        flex-direction: column;
+      }
+
+      .left {
+        width: 95%;
+        margin-left: 1rem;
+      }
+
+      .right {
+        width: 89%;
+        margin-left: 2rem;
+      }
+
+      .img-thumbnail {
+        margin-left: 7.5rem;
+      }
+    }
+
+    </style>
+
+<body>
+    <header>
+      <h1>THT Bengkrad 2022</h1>
+      <p>Website tes THT</p>
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-button"><a href="#home">Home</a></li>
+        <li class="nav-button"><a href="#about">About</a></li>
+        <li class="nav-button"><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div id="progressBar"></div>
+    </nav>
+    <main>
+      <!-- Tambahkan kode HTML kalian disini -->
+      <div id = "home" class="left">
+        <div class="sub-bagian" style="background-color: #effafe">
+          <h2>👋 Halo, calon-calon anggota Bengkrad!</h2>
+          <p>
+            Soal ini akan melatih kemampuan kalian dalam bidang Web Development,
+            khususnya cara menghandle HTML dan CSS murni. File yang kalian unduh
+            ini berisikan webpage sederhana yang kondisinya masih kurang rapih.
+            Kalian harus merapihkan format web ini agar sesuai dengan gambar
+            pada soal THT kalian. Beberapa spesifikasi yang harus diikuti adalah
+            sebagai berikut:
+          </p>
+          <ul>
+            - Kalian hanya boleh menggunakan HTML dan CSS murni, tanpa
+            Javascript atau library eksternal
+          </ul>
+          <ul>
+            - Navigation Bar harus dibuat menggunakan Grid dan bersifat sticky
+          </ul>
+          <ul>
+            - Konten web harus dibuat menggunakan Flex
+          </ul>
+          <p>
+            Kalian dapat mengganti konten lorem ipsum dibawah ini menjadi konten
+            sesuka kalian. Kalian dapat menambahkan gambar, teks, dan lain
+            sebagainya, selama masih mengikuti format pada foto dan kondisi di
+            atas.
+          </p>
+        </div>
+        <div id = "about" class="sub-bagian" style="background-color: #effafe">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+            velit iste animi ipsam eveniet. Ipsa nesciunt nihil officia
+            veritatis ullam labore commodi cumque est beatae vel porro animi
+            quo, tempora vitae blanditiis libero repellat similique ex
+            provident! Ut obcaecati nam hic, ea odio rerum, harum ullam ex,
+            magni corrupti laborum numquam excepturi sequi fuga dolor
+            accusantium officia est nostrum! Debitis modi inventore iure
+            facilis, praesentium soluta recusandae quaerat sunt quia dolores
+            blanditiis eum non pariatur dignissimos aspernatur mollitia iusto
+            tempora alias vero autem. Labore dolorum repellendus exercitationem
+            quisquam sunt rem praesentium quasi debitis voluptatum a ullam,
+            deserunt, accusamus autem. A.
+          </p>
+        </div>
+      </div>
+
+      <div id= "contact" class="sub-bagian right" style="background-color: #ffc9c9">
+        <h2 style="text-align: center">Bengkrad</h2>
+        <img
+          src="bengkel radio itb.jfif"
+          alt="Achmad Kabir Rifa'i"
+          width="150"
+          class="rounded-circle img-thumbnail"
+        />
+        <ul>
+          <li>Nama : Bengkel Radio IMT</li>
+          <li>Ketua : Zaidhan Nabhan</li>
+          <li>Status di IMT : Badan Semi Otonom</li>
+          <li>Lagi Oprec : Iya</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">
+        &copy Bengkel Radio IMT 2022. All rights reserved.
+      </p>
+      <ul class="social-media">
+        <li>
+          <a
+            href="https://www.linkedin.com/company/bengkel-radio-imt-signum-itb/about/"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+              width="50px"
+              alt="Logo LinkedIn"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/bengkradimt/">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png"
+              width="50px"
+              alt="Logo Instagram"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
